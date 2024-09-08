@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<!--Copyright kostenuksoft -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+              content="
+                        width=device-width,
+                        user-scalable=no,
+                        initial-scale=1.0,
+                        maximum-scale=1.0,
+                        minimum-scale=1.0" />
+        <title>Touhou music contest</title>
+    </head>
+<body>
+    <center>
+        <form action="current_page_url"
+              method="get"
+              enctype="multipart/form-data">
+            <!--method'у має бути призначений "post" у реальних формах -->
+            <fieldset>
+                <legend>Personal info</legend>
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter name..."
+                       required tabindex="1">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                       name="email"
+                       placeholder="Enter email..."
+                       autocomplete="off"
+                       required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                       tabindex="2">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="At least 6 char.."
+                       required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                       tabindex="3">
+                <br><br>
+
+                <label for="phone">Tel:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="Enter valid number..."
+                       required pattern="[0-9]{10}" tabindex="4">
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       required tabindex="5">
+                <br><br>
+            </fieldset>
+            <fieldset>
+
+                <legend>Preferences</legend>
+                <label>Pick your favorite feature in Touhou:</label><br>
+
+                <input type="radio"
+                       id="feature_life"
+                       name="features"
+                       value="life"
+                       tabindex="7">
+                <label for="feature_life">Life</label><br>
+
+                <input type="radio"
+                       id="feature_bomb"
+                       name="features"
+                       value="bomb"
+                       tabindex="8">
+                <label for="feature_bomb">Bomb</label><br>
+
+                <input type="radio"
+                       id="feature_graze"
+                       name="features"
+                       value="graze"
+                       tabindex="9">
+                <label for="feature_graze">Graze</label><br><br>
+
+                <label>Prefered contact method:</label><br>
+                <input type="radio"
+                       id="contact_email"
+                       name="contact"
+                       value="email"
+                       tabindex="10">
+                <label for="contact_email">Email</label><br>
+                <input type="radio"
+                       id="contact_phone"
+                       name="contact"
+                       value="phone"
+                       checked tabindex="11">
+                <label for="contact_phone">Phone</label><br><br>
+
+                <label>Hobbys:</label><br>
+                <input type="checkbox"
+                       id="hobby_reading"
+                       name="hobbies"
+                       value="reading"
+                       tabindex="13">
+                <label for="hobby_reading">Reading</label><br>
+                <input type="checkbox"
+                       id="hobby_traveling"
+                       name="hobbies"
+                       value="traveling"
+                       tabindex="14">
+                <label for="hobby_traveling">Traveling</label><br>
+                <input type="checkbox"
+                       id="hobby_cooking"
+                       name="hobbies"
+                       value="cooking"
+                       tabindex="15">
+                <label for="hobby_cooking">Cooking</label><br>
+                <input type="checkbox"
+                       id="hobby_sports"
+                       name="hobbies"
+                       value="sports"
+                       tabindex="16">
+                <label for="hobby_sports">Sports</label><br><br>
+
+                <label for="car">Pick one Touhou game (even if you didn`t played :P):</label>
+                <select id="car" name="car" tabindex="17">
+                    <option value="th6">Touhou 6 - Embodiment of Scarlet Devil</option>
+                    <option value="th7">Touhou 7 - Perfect Cherry Blossom</option>
+                    <option value="th8" selected>Touhou 8 - The Imperishable Night</option>
+                    <option value="th9">Touhou 9 - Phantasmagoria of Flower View</option>
+                    <option value="th10">Touhou 10 - Mountain of Faith</option>
+                </select><br><br>
+
+                <label for="fruits">Pick a character:</label>
+                <select id="fruits" name="fruits" multiple tabindex="18">
+                    <option value="RmHkr">Reimu Hakurei</option>
+                    <option value="MrsKrsm">Marisa Kirisame</option>
+                    <option value="Master">Yukari Yakumo</option>
+                    <option value="9tales">Ran Yakumo</option>
+                    <option value="9lives">Chen</option>
+                    <option value="Fatfugg">Yuko Saigyouji</option>
+                </select><br><br>
+
+                <label for="cities">Pick your city:</label>
+                <select id="cities" name="cities" tabindex="19">
+                    <optgroup label="USA">
+                        <option value="ny">New York</option>
+                        <option value="la">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="london">London</option>
+                        <option value="paris">Paris</option>
+                        <option value="berlin">Berlin</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="tokyo">Tokyo</option>
+                        <option value="seoul">Seoul</option>
+                        <option value="beijing">Beijing</option>
+                    </optgroup>
+                    <optgroup label="Australia">
+                        <option value="sydney">Sydney</option>
+                        <option value="melbourne">Melbourne</option>
+                        <option value="brisbane">Brisbane</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="browsers">Pick your browser:</label>
+                <input list="browsers" name="browser" id="browser" tabindex="20">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Files upload section</legend>
+
+                <label for="audio">Upload audio files:</label>
+                <input type="file" id="audio" name="audio" accept="audio/*" multiple tabindex="21"><br><br>
+            </fieldset>
+            <input type="submit" value="Submit" tabindex="22">
+            <input type="reset" value="Reset" tabindex="23">
+        </form>
+    </center>
+</body>
+<!--Copyright kostenuksoft -->
+</html>
