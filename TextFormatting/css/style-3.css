@@ -1,0 +1,39 @@
+
+a {
+    color: green;
+}
+
+.nd-lst {
+    color: purple;
+}
+
+.sqr-b {
+    list-style-type: square;
+}
+
+.mrk_b {
+    list-style-image: url("../assets/li.svg");
+}
+
+.sqr-b li a {
+    text-decoration: none;
+}
+
+ul li ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+main {
+    width: 100%;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
