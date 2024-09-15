@@ -1,0 +1,44 @@
+* {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+p {
+  color: green;
+  text-align: center;
+}
+
+div {
+  text-align: justify;
+}
+
+.first-paragraph {
+  color: red;
+  white-space: nowrap;
+}
+.third-paragraph {
+  color: red;
+}
+
+#second-paragraph {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.second-paragraph {
+  text-shadow: 5px -5px 3px blue;
+}
+
+.second-div-el {
+  text-shadow: 5px -5px 3px yellow;
+  letter-spacing: 30px;
+  text-indent: 50px;
+}
+
+.first-div-el {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-indent: 50px;
+}
+
