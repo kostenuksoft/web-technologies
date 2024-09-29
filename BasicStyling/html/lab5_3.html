@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--Copyright kostenuksoft -->
+    <head>
+        <meta charset="utf-8" 
+              name="viewport"
+              content="
+              width=device-width,
+              user-scalable=no,
+              initial-scale=1.0,
+              maximum-scale=1.0,
+              minimum-scale=1.0" />
+        <link rel="stylesheet" href="../css/style-c.css" />
+        <title>Touhou music contest</title>
+    </head>
+    <body>
+        <div class="th-contest">
+            <div class="th-contest-navigation">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#personal-info">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="21" y1="10" x2="3" y2="10" />
+                                    <line x1="21" y1="6" x2="3" y2="6" />
+                                    <line x1="21" y1="14" x2="3" y2="14" />
+                                    <line x1="21" y1="18" x2="3" y2="18" />
+                                </svg>
+                                Personal info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#preferences">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                     width="24" 
+                                     height="24" 
+                                     viewBox="0 0 24 24" 
+                                     fill="none" 
+                                     stroke="currentColor" stroke-width="2" 
+                                     stroke-linecap="round" 
+                                     stroke-linejoin="round">
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                                </svg>
+                                Preferences
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#upload">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                                </svg>
+                                File upload section
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="th-contest-content">
+                <section align="center">
+                    <div th-form id="intro"></div>
+                    <h1 class="package-name"
+                       >
+                        Touhou music contest
+                    </h1>
+                        Stylized <strong>questionarie</strong> form from third laboratory assigment.
+                    <br />
+                </section>
+                <form action="current_page_url"
+                      method="post"
+                      enctype="multipart/form-data">
+                    <!--method'у має бути призначений "post" у реальних формах -->
+                    <section>
+                        <fieldset id="personal-info">
+                            <h1>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="24" height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <line x1="21" y1="10" x2="3" y2="10" />
+                                    <line x1="21" y1="6" x2="3" y2="6" />
+                                    <line x1="21" y1="14" x2="3" y2="14" />
+                                    <line x1="21" y1="18" x2="3" y2="18" />
+                                </svg>
+                                Personal info
+                            </h1>
+                            <div class="th-form-group">
+                                <label for="name">Name:</label>
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       placeholder="Enter name..."
+                                       required tabindex="1">
+                            </div>
+                            <div class="th-form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email"
+                                       name="email"
+                                       placeholder="Enter email..."
+                                       autocomplete="off"
+                                       required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                       tabindex="2">
+                            </div>
+                            <div class="th-form-group">
+                                <label for="password">Password:</label>
+                                <input type="password"
+                                       id="password"
+                                       name="password"
+                                       placeholder="At least 6 char.."
+                                       required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                       tabindex="3">
+                            </div>
+                            <div class="th-form-group">
+                                <label for="phone">Tel (without country code):</label>
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="Enter valid number..."
+                                       required pattern="[0-9]{10}" tabindex="4">
+                            </div>
+                            <div class="th-form-group">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date"
+                                       id="dob"
+                                       name="dob"
+                                       required tabindex="5">
+                            </div>
+                        </fieldset>
+                    </section>
+
+                    <section>
+                        <fieldset id="preferences">
+                            <h1>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor" stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <polyline points="9 11 12 14 22 4" />
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                                </svg>
+                                Preferences
+                            </h1>
+                            <label>Pick your favorite feature in Touhou:</label>
+                            <div class="th-form-group">
+                                <input type="radio"
+                                       id="feature_life"
+                                       name="features"
+                                       value="life"
+                                       tabindex="7">
+                                <label for="feature_life">Life</label>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="radio"
+                                       id="feature_bomb"
+                                       name="features"
+                                       value="bomb"
+                                       tabindex="8">
+                                <label for="feature_bomb">Bomb</label>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="radio"
+                                       id="feature_graze"
+                                       name="features"
+                                       value="graze"
+                                       tabindex="9">
+                                <label for="feature_graze">Graze</label>
+                            </div>
+                            <br />
+                            <label>Prefered contact method:</label>
+                            <div class="th-form-group">
+                                <input type="radio"
+                                       id="contact_email"
+                                       name="contact"
+                                       value="email"
+                                       tabindex="10">
+                                <label for="contact_email">Email</label>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="radio"
+                                       id="contact_phone"
+                                       name="contact"
+                                       value="phone"
+                                       checked tabindex="11">
+                                <label for="contact_phone">Phone</label>
+                            </div>
+                            <br />
+                            <label>Hobbys:</label>
+                            <div class="th-form-group">
+                                <input type="checkbox"
+                                       id="hobby_reading"
+                                       name="hobbies"
+                                       value="reading"
+                                       tabindex="13">
+                                <label for="hobby_reading">Reading</label><br>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="checkbox"
+                                       id="hobby_traveling"
+                                       name="hobbies"
+                                       value="traveling"
+                                       tabindex="14">
+                                <label for="hobby_traveling">Traveling</label><br>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="checkbox"
+                                       id="hobby_cooking"
+                                       name="hobbies"
+                                       value="cooking"
+                                       tabindex="15">
+                                <label for="hobby_cooking">Cooking</label><br>
+                            </div>
+                            <div class="th-form-group">
+                                <input type="checkbox"
+                                       id="hobby_sports"
+                                       name="hobbies"
+                                       value="sports"
+                                       tabindex="16">
+                                <label for="hobby_sports">Sports</label>
+                            </div>
+                            <div class="th-form-group">
+                                <label for="game">Pick one Touhou game (even if you didn`t played :P):</label>
+                                <select id="game" name="game" tabindex="17">
+                                    <option value="th6">Touhou 6 - Embodiment of Scarlet Devil</option>
+                                    <option value="th7">Touhou 7 - Perfect Cherry Blossom</option>
+                                    <option value="th8">Touhou 8 - The Imperishable Night</option>
+                                    <option value="th9">Touhou 9 - Phantasmagoria of Flower View</option>
+                                    <option value="th10">Touhou 10 - Mountain of Faith</option>
+                                </select>
+                            </div>
+                            <div class="th-form-group">
+                                <label for="chars">Pick a character:</label>
+                                <select id="chars" name="chars" multiple tabindex="18">
+                                    <option value="RmHkr">Reimu Hakurei</option>
+                                    <option value="MrsKrsm">Marisa Kirisame</option>
+                                    <option value="Master">Yukari Yakumo</option>
+                                    <option value="9tales">Ran Yakumo</option>
+                                    <option value="9lives">Chen</option>
+                                    <option value="Fatfugg">Yuko Saigyouji</option>
+                                </select>
+                            </div>
+                            <div class="th-form-group">
+                                <label for="cities">Pick your city:</label>
+                                <select id="cities" name="cities" tabindex="19">
+                                    <optgroup label="USA">
+                                        <option value="ny">New York</option>
+                                        <option value="la">Los Angeles</option>
+                                        <option value="chicago">Chicago</option>
+                                    </optgroup>
+                                    <optgroup label="Europe">
+                                        <option value="london">London</option>
+                                        <option value="paris">Paris</option>
+                                        <option value="berlin">Berlin</option>
+                                    </optgroup>
+                                    <optgroup label="Asia">
+                                        <option value="tokyo">Tokyo</option>
+                                        <option value="seoul">Seoul</option>
+                                        <option value="beijing">Beijing</option>
+                                    </optgroup>
+                                    <optgroup label="Australia">
+                                        <option value="sydney">Sydney</option>
+                                        <option value="melbourne">Melbourne</option>
+                                        <option value="brisbane">Brisbane</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section>
+                        <h1>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
+                            </svg>
+                            Upload section
+                        </h1>
+                        <fieldset id="upload">
+                            <legend>Files upload section</legend>
+                            <div class="th-form-group">
+                                <label for="audio">Upload audio files:</label>
+                                <input type="file" id="audio" name="audio" accept="audio/*" multiple tabindex="21"><br><br>
+                                <input type="submit" value="Submit" tabindex="22">
+                                <br />
+                                <input type="reset" value="Reset" tabindex="23">
+                            </div>
+                        </fieldset>
+                    </section>
+                </form>
+            <footer>
+                Made with W3C SVG resources, CSS and this person patience: (<a href="https://github.com/kostenuksoft">kostenuksoft</a>)
+            </footer>
+            </main>
+        </div>
+    </body>
+<!--Copyright kostenuksoft -->
+</html>
