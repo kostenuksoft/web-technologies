@@ -1,0 +1,53 @@
+table {
+    border: white;
+    mso-cellspacing: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-spacing: 2px;
+} 
+
+td {
+    width: 200px;
+    height: 75px;
+    border: white;
+    text-align: center;
+}
+
+tr:first-child td:first-child{
+    background-color: #F2DBDB;
+}
+
+tr:first-child td:nth-child(2) {
+    background-color: #E5B8B7;
+}
+
+tr:first-child td:nth-child(3){
+    background-color: #D99594;
+}
+
+tr:first-child td:nth-child(4){
+    background-color: #943634;
+}
+
+tr:first-child td:nth-child(5) {
+    background-color: #632423;
+}
+
+tr:first-child{
+    color: white;
+}
+
+tr:nth-child(odd){
+    background-color: #F2DBDB;
+}
+
+tr:nth-child(even){
+    background-color: #E5B8B7;
+}
+
+tr:nth-child(n + 2) td:first-child {
+    background-color: #C0504D;
+    color: white;
+}
+
+
