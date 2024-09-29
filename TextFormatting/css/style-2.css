@@ -1,0 +1,39 @@
+
+.text-container {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h1 {
+  color: red;
+}
+
+.ff-comic-sans {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.hr {
+    background-color: green;
+    color: green;
+    width: 50%;
+    height: 2px;
+    margin: 1em auto;
+    box-shadow: none;
+}
+
+.bg-yellow-color {
+  background-color: yellow;
+}
