@@ -1,0 +1,200 @@
+footer, 
+header, 
+menu, 
+nav, 
+section {
+  display: block;
+}
+a,
+body,
+div,
+footer,
+h1,
+header,
+html,
+img,
+li,
+menu,
+nav,
+ol,
+p,
+s,
+section,
+select,
+option,
+span,
+strong,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: initial;
+}
+
+body {
+   font-family: Roboto, sans-serif;
+   color: whitesmoke;
+   background: whitesmoke;
+   line-height: 1;
+}
+
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.stylizator {
+    margin: 0 auto;
+    display: flex;
+    max-width: 55em;
+}
+
+.stylizator .stylizator-navigation {
+  width: 18em;
+  padding: 2em 1em;
+}
+
+.stylizator .stylizator-navigation nav {
+  position: sticky;
+  top: 2em;
+  background: #fff;
+  padding: 0.5em;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px #000000, 0 4px 6px -2px #000000;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.stylizator .stylizator-navigation a {
+  display: flex;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  border-radius: 0.25em;
+  color: #374151;
+  align-items: center;
+}
+
+.stylizator .stylizator-navigation a:hover {
+    background: grey;
+}
+
+.stylizator .stylizator-navigation a svg {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 1em;
+  color: #1f2937;
+}
+
+.stylizator .stylizator-content {
+  padding: 2em 1em;
+  max-width: 100%;
+}
+
+
+footer {
+  text-align: center;
+  margin: 2.5em 0;
+}
+
+section {
+  background: #fff;
+  padding: 2em;
+  border-radius: 0.75rem;
+  line-height: 1.6;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 15px -3px #000000, 0 4px 6px -2px #000000;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+section h1 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+section h1 svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -10%;
+  margin-right: 0.25em;
+}
+
+section h1.package-name {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  margin-top: -0.5rem;
+}
+
+section strong {
+  font-weight: bold;
+  color: dimgray;
+}
+
+section p {
+  margin: 0.5rem 0 1.5rem;
+}
+
+section p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3b4ce2;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+
+section ul {
+  margin-top: 0.5em;
+  padding-left: 1em;
+  list-style-type: disc;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.stylizator-group {
+    --my-var-input-size: 1rem; 
+    display: block;
+    margin-top: calc(var(--my-var-input-size)*1.5);
+    line-height: 1;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
