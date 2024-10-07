@@ -14,5 +14,5 @@
 ## *Laboratory 5 - Basic Styling*
 [Root Page](https://kostenuksoft.github.io/web-technologies/BasicStyling/index.html)
 
-## *Laboratory 6 -Block Styling*
+## *Laboratory 6 - Block Styling*
 [Root Page](https://kostenuksoft.github.io/web-technologies/BlockFormatting/index.html)
