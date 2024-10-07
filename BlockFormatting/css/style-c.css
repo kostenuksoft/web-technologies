@@ -1,0 +1,75 @@
+
+.block-list{
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.block-list li:last-child{
+    margin-right: 0;
+}
+
+.block-item > img {
+    margin-top: 20px;
+    border-radius: 250px;
+    height: 120px;
+    width: 120px;
+}
+
+.block-item{
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    overflow: auto;
+}
+.article-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.first-block{
+    background: linear-gradient(to bottom left, orange 2%, blue 30%, yellow 70%, green 95%);
+}
+
+.second-block {
+    background-image: linear-gradient(45deg, green 20%, transparent 25%, transparent 25%, transparent 75%, orange 75%, blue 100%),
+    linear-gradient(50deg, yellow 20%, transparent 25%, transparent 25%, transparent 75%, purple 75%, orange 100%);
+    background-size: 100px 100px;
+    background-position: 5px 5px, 50px 50px;
+}
+
+.third-block {
+    background-image: linear-gradient(to right, green 25%, transparent 50%, transparent 100%),
+    linear-gradient(to right, transparent 50%, blue 50%, yellow 100%);
+    background-size: 105px;
+    background-repeat: repeat;
+}
+
+.fourth-block {
+    background-image: linear-gradient(to left top, yellow 35%, transparent 10%, transparent 100%),
+    linear-gradient(to right top, green 25%, transparent 10%, transparent 100%),
+    linear-gradient(to right bottom, orange 25%, transparent 50%, transparent 70%),
+    linear-gradient(to left bottom, blue 25%, transparent 60%, transparent 100%);
+}
+
+.fifth-block{
+    background-image:linear-gradient(to right top, rebeccapurple 10%, transparent 30%, transparent 90%),
+    linear-gradient(
+            350deg,
+            hsl(44, 100%, 38%) 0%,
+            hsl(43, 46%, 60%) 5%,
+            hsl(335, 44%, 41%) 16%,
+            hsl(290, 29%, 31%) 24%,
+            hsl(120, 55%, 54%) 32%,
+            hsl(41, 100%, 65%) 39%,
+            hsl(321, 45%, 46%) 47%,
+            hsl(263, 31%, 50%) 56%,
+            hsl(219, 97%, 45%) 64%,
+            hsl(109, 68%, 55%) 73%,
+            hsl(50, 100%, 50%) 82%,
+            hsl(21, 79%, 45%) 91%,
+            hsl(0, 100%, 50%) 100%
+    );
+}
