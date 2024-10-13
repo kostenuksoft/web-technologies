@@ -1,0 +1,246 @@
+
+main {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+.horizontal-wrapper {
+    width: 25%;
+    display: inline-block;
+    background-color: gray;
+    position: sticky;
+}
+
+.horizontal-list {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.horizontal-item {
+    float: bottom;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1px;
+    width: 5em;
+    height: 3em;
+    background-color: darkgray;
+}
+.horizontal-item:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.horizontal-item img {
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.horizontal-item:nth-child(3):hover .horizontal-inner-list{
+    visibility: visible;
+}
+
+.horizontal-inner-list {
+    padding: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: darkgray;
+    width: calc(5em * 3 + 5px);
+    right: 10px;
+    float: right;
+}
+
+.horizontal-inner-item {
+    border: solid 1px grey;
+    color: white;
+    font-weight: 600;
+    text-align: right;
+    padding: 10px;
+}
+
+.horizontal-inner-item:hover {
+    background-color: grey;
+}
+
+.horizontal-inner-item:nth-child(2):hover .double-inner-list {
+    visibility: visible;
+}
+.double-inner-list {
+    padding: 0;
+    font-weight: normal;
+    visibility: hidden;
+    position: absolute;
+    background-color: grey;
+    right: calc(5em * 3 + 5px);
+    top: 0;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+.double-inner-list li {
+    border: solid 1px grey;
+    padding-right: 5px;
+}
+.double-inner-list li:hover {
+    background-color: gray;
+}
+.double-inner-list li a {
+    padding: 10px 0;
+    display:block;
+    width:  100%;
+    height: 100%;
+}
+
+input:focus {
+    outline:none;
+}
+.horizontal-item:nth-child(2):hover .search-box {
+    visibility: visible;
+}
+.search-box {
+    visibility: hidden;
+    position: absolute;
+    height: 3em;
+    width: calc(5em * 3 + 5px);
+    background-color: gray;
+    right: 10px;
+    text-align: center;
+    cursor: default;
+}
+.search-box label{
+    position: relative;
+    top: 25%;
+    display: inline-block;
+}
+.search-box input{
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.vertical-wrapper {
+    display: inline-block;
+    background-color: gray;
+    position: sticky;
+    height: 192px;
+}
+.vertical-list{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.vertical-item {
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+.vertical-item img{
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+.vertical-item:hover {
+    background-color: darkgray;
+}
+.vertical-item:nth-child(3):hover .vertical-inner-list{
+    visibility: visible;
+}
+.vertical-inner-list {
+    padding: 0;
+    visibility: hidden;
+    position: relative;
+    background-color: darkgray;
+    height: 192px;
+    width: calc(5em * 3 + 5px);
+    right: -100%;
+    top: calc(-3 * 64px - 3px);
+}
+.vertical-inner-item {
+    box-sizing: border-box;
+    height: 64px;
+    border: solid 1px gray;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 22px 10px;
+}
+    .vertical-inner-item:hover {
+        background-color: darkgray;
+    }
+.vertical-inner-item:nth-child(2):hover .vdouble-inner-list{
+    visibility: visible;
+}
+.vdouble-inner-list {
+    padding: 0;
+    font-weight: normal;
+    visibility: hidden;
+    position: absolute;
+    background-color: darkgray;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+.vdouble-inner-list li {
+    box-sizing: border-box;
+
+    border: solid 1px darkgray;
+    height: 64px;
+    padding: 20px 0 20px 5px;
+}
+.vdouble-inner-list li:hover {
+    background-color: darkgray;
+}
+.vdouble-inner-list li a {
+    color: white;
+    display:block;
+    width:  100%;
+    height: 100%;
+}
+
+.vertical-item:nth-child(2):hover .vertical-search-box {
+    visibility: visible;
+}
+.vertical-search-box {
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: calc(5em * 3 + 5px);
+    background-color: darkgray;
+    right: -382%;
+    text-align: center;
+    cursor: default;
+    top: 0;
+}
+.vertical-search-box label{
+    position: relative;
+    top: 25%;
+    display: inline-block;
+    padding: 5px;
+}
+.vertical-search-box input{
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
