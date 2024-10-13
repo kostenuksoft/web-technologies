@@ -16,3 +16,6 @@
 
 ## *Laboratory 6 - Block Styling*
 [Root Page](https://kostenuksoft.github.io/web-technologies/BlockFormatting/index.html)
+
+## *Laboratory 7 - Element Positioning*
+[Root Page](https://kostenuksoft.github.io/web-technologies/ElementPositioning/index.html)
