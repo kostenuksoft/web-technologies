@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0, #c16ecf 100%);
+}
+
+a {
+    color: white;
+}
+
+.plan ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plan ul li {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
+}
+
+.plan a {
+    text-decoration: none;
+    background-color: gold;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.plan h2 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 #000000;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 50px;
+    font-family: Arial, Helvetica, serif;
+    margin: 10px 0;
+}
+
+.pricing-grid {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.plan {
+    flex: 1;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan > * {
+    flex: 1 1 100%;
+}
+
+.plan .cta {
+    align-self: flex-end;
+}

@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+}
+
+a {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.slider img {
+    height: 500px;
+    margin-bottom: 2px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.slider-nav ul {
+    display: flex;
+    align-items: stretch;
+}
+
+.slider-nav li {
+    flex: 2;
+}
+
+.slider-nav .arrow {
+    flex: 1;
+}
+
+.slider-nav a {
+    flex-basis: 100%;
+    display: flex;
+}

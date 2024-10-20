@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0, #c16ecf 100%);
+}
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background: #000000;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.toggleNav {
+    display: none;
+}
+
+.hero img {
+    height: auto;
+    width: 80%;
+}
+
+.flex-nav img {
+    height: auto;
+    width: 30px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    /*padding: 50px;*/
+}
+
+input {
+    padding: 10px;
+    border: 0;
+    margin-bottom: 5px;
+}
+
+section, footer {
+    text-align: center;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
+}
+
+.flex-nav ul {
+    border: 2px solid black;
+    display: flex;
+}
+
+.flex-nav li {
+    flex: 3;
+}
+
+.flex-nav .social {
+    flex: 1;
+}
+
+
+@media all and (max-width: 1000px) {
+
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li {
+        flex: 1 1 50%;
+    }
+
+    .flex-nav .social {
+        flex: 1 1 25%;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .flex-nav li {
+        flex-basis: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper > * {
+        order: 9999;
+    }
+
+    .flex-nav {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .toggleNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 5px;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
+
+    .toggleNav:focus ~ ul {
+        display: flex;
+    }
+
+    .top {
+        order: 2;
+    }
+
+    .details {
+        order: 3;
+    }
+
+    .signup {
+        order: 4;
+    }
+
+
+}
