@@ -19,3 +19,6 @@
 
 ## *Laboratory 7 - Element Positioning*
 [Root Page](https://kostenuksoft.github.io/web-technologies/ElementPositioning/index.html)
+
+## *Laboratory 8 - Flexboxes*
+[Root Page](https://kostenuksoft.github.io/web-technologies/Flexboxes/index.html)
