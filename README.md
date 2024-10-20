@@ -22,3 +22,5 @@
 
 ## *Laboratory 8 - Flexboxes*
 [Root Page](https://kostenuksoft.github.io/web-technologies/Flexboxes/index.html)
+  - [flexbox-froggy](https://github.com/kostenuksoft/web-technologies/blob/development/Flexboxes/flexbox-froggy/1.PNG)
+  - [what`s-the-flexboxes](https://github.com/kostenuksoft/web-technologies/blob/development/Flexboxes/flexbox-froggy/1.PNG)
