@@ -16,3 +16,11 @@
 
 ## *Laboratory 6 - Block Styling*
 [Root Page](https://kostenuksoft.github.io/web-technologies/BlockFormatting/index.html)
+
+## *Laboratory 7 - Element Positioning*
+[Root Page](https://kostenuksoft.github.io/web-technologies/ElementPositioning/index.html)
+
+## *Laboratory 8 - Flexboxes*
+[Root Page](https://kostenuksoft.github.io/web-technologies/Flexboxes/index.html)
+  - [flexbox-froggy](https://github.com/kostenuksoft/web-technologies/blob/development/Flexboxes/flexbox-froggy/Finish.PNG)
+  - [what`s-the-flexboxes](https://kostenuksoft.github.io/web-technologies/Flexboxes/what-is-flexboxes/index.html)

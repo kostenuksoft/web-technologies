@@ -4,7 +4,7 @@
 }
 
 .my-bg {
-    background-image: url('/assets/general/1.png');
+    background-image: url('assets/general/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:top;
@@ -31,7 +31,7 @@ header {
     box-shadow: #000000 0 1px 5px 2px;
     box-shadow: rgba(0, 0, 0, 0.37) 0 1px 5px 2px;
     margin: 0 auto;
-    background-image: url('/assets/general/1.png');
+    background-image: url('assets/general/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
