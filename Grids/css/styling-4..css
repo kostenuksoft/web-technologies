@@ -1,0 +1,93 @@
+* {
+    font-family: "Playfair Display", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.tree-wrapper {
+    margin: 50px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 4fr);
+    grid-template-rows: repeat(12, 1fr);
+    min-width: 80%;
+    grid-template-areas: "x1 x2 x4 x7  x11 x17" 
+                         "x1 x2 x4 x7  x11 x18"
+                         "x1 x2 x4 x7  x12 x19"
+                         "x1 x2 x4 x8  x12 x20"
+                         "x1 x2 x5 x8  x13 x21"
+                         "x1 x2 x5 x8  x13 x22"
+                         "x1 x3 x5 x9  x14 x23"
+                         "x1 x3 x5 x9  x14 x24"
+                         "x1 x3 x6 x9  x15 x25"
+                         "x1 x3 x6 x10 x15 x26"
+                         "x1 x3 x6 x10 x16 x27"
+                         "x1 x3 x6 x10 x16 x28";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c43632;
+    box-shadow: #c43632 0 1px 10px 1px;
+    box-shadow: rgb(196 54 50) 0 1px 10px 1px;
+    padding: 20px;
+    text-align: center;
+    color: #EEEEEE;
+    font-weight: 800;
+}
+
+.container:first-child {
+    grid-area: x1;
+}
+.container:nth-child(2) {
+    grid-area: x2;
+}
+.container:nth-child(3) {
+    grid-area: x3;
+}
+.container:nth-child(4) {
+    grid-area: x4;
+}
+.container:nth-child(5) {
+    grid-area: x5;
+}
+.container:nth-child(6) {
+    grid-area: x6;
+}
+.container:nth-child(7) {
+    grid-area: x7;
+}
+.container:nth-child(8) {
+    grid-area: x8;
+}
+.container:nth-child(9) {
+    grid-area: x9;
+}
+.container:nth-child(10) {
+    grid-area: x10;
+}
+.container:nth-child(11) {
+    grid-area: x11;
+}
+.container:nth-child(12) {
+    grid-area: x12;
+}
+.container:nth-child(13) {
+    grid-area: x13;
+}
+.container:nth-child(14) {
+    grid-area: x14;
+}
+.container:nth-child(15) {
+    grid-area: x15;
+}
+.container:nth-child(16) {
+    grid-area: x16;
+}
