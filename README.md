@@ -24,3 +24,6 @@
 [Root Page](https://kostenuksoft.github.io/web-technologies/Flexboxes/index.html)
   - [flexbox-froggy](https://github.com/kostenuksoft/web-technologies/blob/development/Flexboxes/flexbox-froggy/Finish.PNG)
   - [what`s-the-flexboxes](https://kostenuksoft.github.io/web-technologies/Flexboxes/what-is-flexboxes/index.html)
+## *Laboratory 9 - Grids*
+[Root Page](https://kostenuksoft.github.io/web-technologies/Grids/index.html)
+  - [grid-garden](https://github.com/kostenuksoft/web-technologies/blob/development/Grids/grid-garden/Finish.PNG)
