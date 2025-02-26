@@ -46,8 +46,30 @@
 </details>
 
 <details>
-<summary ><b>Plain <sub>JS</sub><sup>TS</sup> <sub>+ <sub>Libs</sub><sup>Frameworks</sup></sub> </summary>
+<summary ><b>Plain <sup>JS</sup><sub>TS</sub></summary>
+  
+<p align = "center"> <b>JavaScript</b></p>
+  
+---
+## *Laboratory [1] - Meet the JavaScript!*
+[Check out](https://kostenuksoft.github.io/web-technologies/js/1/index.html)
+
+---
+
+## *Laboratory [2] - Operators, conditional statements*
+[Check out](https://kostenuksoft.github.io/web-technologies/js/2/index.html)
+
+---
+
+## *Laboratory [3] - Loops, switch statement, arrow functions*
+[Check out](https://kostenuksoft.github.io/web-technologies/js/3/index.html)
+
+---
 
 </details>
 
+<details>
+<summary><b><sup>Frameworks</sup><sub>Libraries</sub></summary>
+</details>
+  
 ***
